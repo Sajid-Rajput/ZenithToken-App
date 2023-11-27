@@ -4,6 +4,9 @@ import { polygonMumbai } from "@wagmi/core/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { TokenApp } from "./components/TokenApp";
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
@@ -25,6 +28,7 @@ function App() {
     <div className="App">
       <WagmiConfig config={config}>
         <TokenApp />
+        <ToastContainer />
       </WagmiConfig>
     </div>
   );

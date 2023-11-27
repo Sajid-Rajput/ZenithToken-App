@@ -4,6 +4,7 @@ import { useAccount, useConnect, useDisconnect } from "wagmi";
 import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 import title from "../constants/title/title";
 import { parseUnits } from "viem";
+import { toast } from "react-toastify";
 import {
   checkBalance,
   transferBalance,
@@ -25,10 +26,10 @@ export function TokenApp() {
   const handleCheckBalance = async () => {
     try {
       const balance = await checkBalance(address);
-      alert(`Balance: ${(balance as any) / BigInt(10) ** BigInt(18)}`);
+      toast.success(`Balance: ${(balance as any) / BigInt(10) ** BigInt(18)}`);
     } catch (error) {
       console.error("Error checking balance:", error);
-      alert("Error checking balance");
+      toast.error("Error checking balance");
     }
   };
 
@@ -36,10 +37,10 @@ export function TokenApp() {
     try {
       const amount = parseUnits(value, 18);
       await transferBalance(String(sendTo), amount);
-      alert(`Successfully transferred ${value} tokens to ${sendTo}`);
+      toast.success(`Successfully transferred ${value} tokens to ${sendTo}`);
     } catch (error) {
       console.error("Error transferring tokens:", error);
-      alert("Error transferring tokens");
+      toast.error("Error transferring tokens");
     }
   };
 

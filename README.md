@@ -1,5 +1,7 @@
 # ZenithToken-App
 
+![Alt text](zenithtoken.PNG)
+
 This project comprises two main directories:
 
 1. **token_frontend**
