@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 import { MetaMaskConnector } from "wagmi/connectors/metaMask";
+import title from "../constants/title/title";
 import { parseUnits } from "viem";
 import {
   checkBalance,
@@ -24,7 +25,7 @@ export function TokenApp() {
   const handleCheckBalance = async () => {
     try {
       const balance = await checkBalance(address);
-      alert(`Balance: ${balance as any / BigInt(10) ** BigInt(18)}`);
+      alert(`Balance: ${(balance as any) / BigInt(10) ** BigInt(18)}`);
     } catch (error) {
       console.error("Error checking balance:", error);
       alert("Error checking balance");
@@ -65,7 +66,7 @@ export function TokenApp() {
         </div>
 
         <div>
-          <h1>Zenith Token</h1>
+          <h1>{title.mainTitle}</h1>
           <button className="check-balance-button" onClick={handleCheckBalance}>
             Check Balance
           </button>

@@ -10,7 +10,7 @@ async function main() {
     "Zenith Token", // Replace with your desired token name
     "ZNTH", // Replace with your desired token symbol
     18, // Replace with the desired number of decimals
-    ethers.utils.parseEther("1000000") // Replace with the desired initial supply in ethers
+    1000000 // Replace with the desired initial supply in ethers
   );
 
   console.log("ZenithToken address:", zenithToken.address);
