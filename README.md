@@ -131,3 +131,31 @@ npm run dev
 Visit http://localhost:5173/ to see the website.
 
 If you want to check the deployed Zenith Token on Polygon Mumbai, you can find it at https://mumbai.polygonscan.com/address/0xA5fB143361E8c4AC3dE3B809541B29945fe0cE47.
+
+# Deployed Version
+
+You can experience the live web app by visiting https://zenith-token-app.vercel.app/
+
+# Visual Overview (How to use)
+
+Here is go through of the website:
+
+![connect button](<connect button.PNG>)
+
+1. Click on the "Connect" button to integrate your Metamask wallet with the Zenith site.
+
+![Open MetaMask](<button to metamask.PNG>)
+
+2. MetaMask will open; provide your credentials to establish a connection between your wallet and the Zenith site.
+
+![Account details](<metamask detail.PNG>)
+
+3. Your connected account's "Public Address" will be displayed on the screen, updating dynamically when you switch wallets.
+
+![Detail Section](<detail section.PNG>)
+
+4. In this main section, clicking on "Check Balance" reveals your current token balance. If you wish to transfer tokens, enter the recipient's details in the "Send To" section. In the "Value" field, remember that "1 token = 1000000000000000000". Click on "Transfer", and your tokens will be securely sent to the specified address.
+
+![Show Balance](<show balance.PNG>)
+
+![Send token](<send token.PNG>)
