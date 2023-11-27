@@ -1,0 +1,82 @@
+/* TokenApp.css */
+.TokenAppContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffffff; /* Black background */
+}
+
+.TokenApp {
+  background-color: #776767; /* Darker background */
+  border: 1px solid #776767; /* Darker border */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Adjusted box shadow */
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Wallet {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ff9900; /* Orange text color */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #555555; /* Darker input border */
+  border-radius: 4px;
+  font-size: 16px;
+  color: #ffffff; /* White text color */
+  background-color: #333333; /* Darker input background */
+}
+
+button {
+  background-color: #ff9900; /* Orange button background */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 25px;
+}
+
+button:hover {
+  background-color: #cc7a00; /* Darker orange on hover */
+}
+
+.DisconnectButton {
+  background-color: #dc3545;
+}
+
+.SignButton {
+  background-color: #28a745;
+}
+
+.ConnectButton {
+  background-color: #007bff;
+}
+
+.check-balance-button {
+  background-color: #ff9900; /* Blue button background */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px; /* Adjusted margin */
+}
+
+.check-balance-button:hover {
+  background-color: #cc7a00; /* Darker blue on hover */
+}
