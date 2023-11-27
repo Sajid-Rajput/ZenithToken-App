@@ -1,6 +1,6 @@
 # ZenithToken-App
 
-![Alt text](zenithtoken.PNG)
+![zenithtoken.PNG](zenithtoken.PNG)
 
 This project comprises two main directories:
 
