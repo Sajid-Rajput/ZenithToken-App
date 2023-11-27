@@ -1,6 +1,6 @@
 # ZenithToken-App
 
-![Alt text](zenithtoken.PNG)
+![zenithtoken.PNG](zenithtoken.PNG)
 
 This project comprises two main directories:
 
@@ -110,7 +110,8 @@ npx hardhat run --network scripts/deploy.ts
 
 ```
 
-If you just want to run the project without creating a frontend or deploying a contract, you need to add a Polygon Mumbai RPC URL to token_frontend/src/App.tsx:
+
+## If you just want to run the project without creating a frontend or deploying a contract, you need to add a Polygon Mumbai RPC URL to token_frontend/src/App.tsx:
 
 ```
 const { chains, publicClient, webSocketPublicClient } = configureChains(
